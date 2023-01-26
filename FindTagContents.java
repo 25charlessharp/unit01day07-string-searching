@@ -12,8 +12,10 @@ public class FindTagContents {
         int closingTagStartPos = text.indexOf(">", textPos);
         int closingTagEndPos = text.indexOf("</", closingTagStartPos);
 
+        System.out.println(textPos);
+
         System.out.print("The text you entered was within a ");
-        System.out.print(text.substring(closingTagStartPos, closingTagEndPos));
+        System.out.print(text.substring(closingTagStartPos+1, closingTagEndPos));
         System.out.println(" tag");
 
         scanner.close();
