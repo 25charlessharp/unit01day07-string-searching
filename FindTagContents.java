@@ -9,11 +9,11 @@ public class FindTagContents {
         String searchTerm = scanner.nextLine();
 
         int textPos = text.indexOf(searchTerm);
-        int closingTagStartPos = text.indexOf("</", textPos);
-        int closingTagEndPos = text.indexOf(">", closingTagStartPos);
+        int closingTagStartPos = text.indexOf(">", textPos);
+        int closingTagEndPos = text.indexOf("</", closingTagStartPos);
 
         System.out.print("The text you entered was within a ");
-        System.out.print(text.substring(closingTagStartPos+2, closingTagEndPos));
+        System.out.print(text.substring(closingTagStartPos, closingTagEndPos));
         System.out.println(" tag");
 
         scanner.close();
