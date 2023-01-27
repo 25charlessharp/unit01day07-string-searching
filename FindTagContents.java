@@ -14,13 +14,17 @@ public class FindTagContents {
 
         System.out.println(textPos);
 
-        System.out.print("The text you entered was within a ");
-        System.out.print(text.substring(closingTagStartPos+1, closingTagEndPos));
-        System.out.println(" tag");
-
         if (textPos == -1){
             System.out.println("There is no " + searchTerm + " tags entered in the HTML");
         }
+        else{
+
+            System.out.print("The text you entered was within a ");
+            System.out.print(text.substring(closingTagStartPos+1, closingTagEndPos));
+            System.out.println(" tag");
+        }
+
+        
 
         scanner.close();
 
