@@ -16,9 +16,9 @@ public class FindWord {
         else{
             int endOfWord = text.indexOf("", wordPos);
             String textUpToWord = text.substring(0, wordPos);
-            int startOfWord = textUpToWord.lastIndexOf("");
-            String word = text.substring(startOfWord,endOfWord);
-            System.out.println("The word is" + word);
+            int startOfWord = textUpToWord.lastIndexOf(" ");
+            String word = text.substring(startOfWord+1,endOfWord+1);
+            System.out.println("The word is " + word);
         }
 
 
