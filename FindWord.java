@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class FindWord {
     public static void main(String[] args) {
-        System.out.println("please type in the sentences");
+        System.out.println("Please type in the sentences");
         Scanner scanner = new Scanner(System.in);
         String text = scanner.nextLine();
 
@@ -14,11 +14,11 @@ public class FindWord {
             System.out.println("That letter is not in the sentence");
         }
         else{
-            int endOfWord = text.indexOf(" ", wordPos);
+            int endOfWord = text.indexOf("", wordPos);
             String textUpToWord = text.substring(0, wordPos);
-            int startOfWord = textUpToWord.lastIndexOf(" ");
+            int startOfWord = textUpToWord.lastIndexOf("");
             String word = text.substring(startOfWord,endOfWord);
-            System.out.println("The word is " + word);
+            System.out.println("The word is" + word);
         }
 
 
