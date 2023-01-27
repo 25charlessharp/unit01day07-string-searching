@@ -12,7 +12,6 @@ public class FindTagContents {
         int closingTagStartPos = text.indexOf(">", textPos);
         int closingTagEndPos = text.indexOf("</", closingTagStartPos);
 
-        System.out.println(textPos);
 
         if (textPos == -1){
             System.out.println("There is no " + searchTerm + " tags entered in the HTML");
