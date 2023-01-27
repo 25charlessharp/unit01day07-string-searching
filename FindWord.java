@@ -1,4 +1,6 @@
-import javax.sql.rowset.spi.SyncResolver;
+import java.util.Scanner;
+
+import java.util.Scanner;
 
 public class FindWord {
     public static void main(String[] args) {
