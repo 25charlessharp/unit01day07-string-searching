@@ -14,7 +14,10 @@ public class FindWord {
             System.out.println("That letter is not in the sentence");
         }
         else{
-            int endOfWord = text.indexOf("", wordPos);
+            int endOfWord = text.indexOf(" ", wordPos);
+            if(endOfWord == -1){
+                endOfWord = text.indexOf("", wordPos);
+            }
             String textUpToWord = text.substring(0, wordPos);
             int startOfWord = textUpToWord.lastIndexOf(" ");
             String word = text.substring(startOfWord+1,endOfWord+1);
