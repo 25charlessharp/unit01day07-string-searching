@@ -1,3 +1,4 @@
+// TODO: fix the output...although it gives the desired information, it's not formatted in the specified way. For example in the first example I expected output "the", but you gave "The text you entered was within a the tag"
 import java.util.Scanner;
 public class FindTagContents {
     public static void main(String[] args) {
