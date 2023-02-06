@@ -1,4 +1,3 @@
-// TODO: fix the output...although it gives the desired information, it's not formatted in the specified way. For example in the first example I expected output "the", but you gave "The text you entered was within a the tag"
 import java.util.Scanner;
 public class FindTagContents {
     public static void main(String[] args) {
@@ -18,9 +17,7 @@ public class FindTagContents {
             System.out.println("There is no " + searchTerm + " tags entered in the HTML");
         }
         else{
-            System.out.print("The text you entered was within a ");
             System.out.print(text.substring(closingTagStartPos+1, closingTagEndPos));
-            System.out.println(" tag");
         }
 
         
